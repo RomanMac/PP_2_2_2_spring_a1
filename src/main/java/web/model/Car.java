@@ -3,14 +3,14 @@ package web.model;
 public class Car {
     private String marka;
     private String model;
-    private String age;
+    private String color;
 
-    public Car() {}
 
-    public Car(String marka, String model, String age) {
+
+    public Car(String marka, String model, String color) {
         this.marka = marka;
         this.model = model;
-        this.age = age;
+        this.color = color;
     }
 
     public String getMarka() {
@@ -29,11 +29,20 @@ public class Car {
         this.model = model;
     }
 
-    public String getAge() {
-        return age;
+    public String getColor() {
+        return color;
     }
 
-    public void setAge(String age) {
-        this.age = age;
+    public void setColor(String age) {
+        this.color = color;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "marka='" + marka + '\'' +
+                ", model='" + model + '\'' +
+                ", color=" +color +
+                '}';
     }
 }

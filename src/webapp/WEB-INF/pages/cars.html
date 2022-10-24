@@ -10,14 +10,15 @@
 <body>
 <table>
     <tr>
+        <th>Marka</th>
         <th>Model</th>
-        <th>Color</th>
+        <th>COLOR</th>
     </tr>
 
     <tr th:each="car : ${carList}">
         <td th:text="${car.getMarka()}"></td>
         <td th:text="${car.getModel()}"></td>
-        <td th:text="${car.getAge()}"></td>
+        <td th:text="${car.getColor()}"></td>
     </tr>
 
 </table>
